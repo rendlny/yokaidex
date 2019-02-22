@@ -1,3 +1,2 @@
-include: [".well-known"]
-
-permalink: .well-known/assetlinks.json
+include: [".assetlinks.json"]
+include: ".well-known"
