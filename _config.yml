@@ -1,4 +1,0 @@
-
-include:
-  - .well-known
-  - .well-known/assetlinks.json
