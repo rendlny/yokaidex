@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Container from './style';
 
 const getHeader = () => {
-    if (document.location.hash.match('yokai'))
+    if (document.location.hash.match('/yokai/'))
         return document.location.hash
             .split('/')[2]
             .replace('%20', ' ')
@@ -16,8 +16,8 @@ const getHeader = () => {
 
 const Header = ({ onSetSidebarOpen }) => (
     <Container>
-        {document.location.hash.match('yokai') ? (
-            <Link to="/home">
+        {document.location.hash.match('/yokai/') ? (
+            <Link to="/">
                 <FontAwesomeIcon icon="arrow-left" />
             </Link>
         ) : (
